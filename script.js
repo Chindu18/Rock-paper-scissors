@@ -1,4 +1,3 @@
-
 let score = JSON.parse(localStorage.getItem('result'))|| { 
     win:0,
     loss:0,
@@ -14,11 +13,6 @@ if(!score){
    }
 }
    */
-
-
-
-
-
 
 // compare the moves
 
@@ -78,8 +72,7 @@ localStorage.setItem('result',JSON.stringify(score))
 
     alert(`you select ${playermove}. computer select  ${computermove}.  so RESULT IS  ${result}
         win:${score.win}. loss:${score.loss}. tie:${score.tie} `)
-    
-   
+     
 }
 //decide a computer move
 
@@ -97,8 +90,3 @@ function cm() {
     }
     return computermove
 }
-
-
-
-
-
